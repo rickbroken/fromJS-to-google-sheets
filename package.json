@@ -1,0 +1,28 @@
+{
+  "name": "reportes-salud",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@vercel/speed-insights": "^1.0.2",
+    "date-fns": "^3.0.6",
+    "next": "14.0.4",
+    "react": "^18",
+    "react-dom": "^18"
+  },
+  "devDependencies": {
+    "@iconify/icons-line-md": "^1.2.30",
+    "@iconify/react": "^4.1.1",
+    "autoprefixer": "^10.0.1",
+    "eslint": "^8",
+    "eslint-config-next": "14.0.4",
+    "postcss": "^8",
+    "standard": "^17.1.0",
+    "tailwindcss": "^3.3.0"
+  }
+}
