@@ -1,36 +1,73 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+## Guardar informacion de Formulario JS en Google Sheets Excel 
 
-## Getting Started
+¿Quieres guardar información en una Hoja de calculo en Google Sheets con JavaScript? ✅ Es así como desarrolle una App Web donde puedes gestionar tu información y guardarla directamente en la nube, esta app esta desarrollada con Next JS, ✨y soluciona el problema de tener que lidiar con hojas de calculo desde dispositivos móviles por la poca accesibilidad. podrás enviar información no importa donde estés.🎯
 
-First, run the development server:
-
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+### Estrcutura de carpetas:
+```
+└── 📁form-google-sheets
+    └── .eslintrc.json
+    └── .gitignore
+    └── 📁img
+        └── icono.png
+    └── jsconfig.json
+    └── next.config.js
+    └── package-lock.json
+    └── package.json
+    └── postcss.config.js
+    └── 📁public
+        └── next.svg
+        └── vercel.svg
+    └── README.md
+    └── 📁src
+        └── 📁app
+            └── favicon.ico
+            └── globals.css
+            └── layout.js
+            └── page.jsx
+        └── 📁components
+            └── ContInputSelect.jsx
+            └── ContInputText.jsx
+            └── ContTypeReport.jsx
+            └── ContTypeTransport.jsx
+            └── FormReport.jsx
+            └── Header.jsx
+            └── InputDateReport.jsx
+            └── InputDateReportFPP.jsx
+            └── InputSelectTpDoc.jsx
+            └── InputTextarea.jsx
+            └── TypeSex.jsx
+        └── 📁elements
+            └── AlertIncomplete.jsx
+            └── AlertSaving.jsx
+        └── 📁functions
+            └── saveData.js
+            └── validateForm.js
+    └── tailwind.config.js
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Instalacion del proyecto
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+### 1. Clonar Repositorio
+En la carpeta que desees, desde la terminar de tu SO de preferencia ejecuta ```git clone https://github.com/rickbroken/fromJS-to-google-sheets.git```, Esto clonara el repositorio en tu carpeta.
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+### 2. Ingresa en la carpeta raiz
+```cd formJS-to-google-sheets```
 
-## Learn More
+### 3. Instala Node Modules
+``` npm install ```
 
-To learn more about Next.js, take a look at the following resources:
+### 4. Registrate en herramienta API SHEETS BEST
+Sheets Best es una herramienta con un plan GRATUITO de 30 dias, si bien pueden haber mejores herramientas que te den un tiempo ilimitado y gratuito, en esta ocacion provaremos este servicio ya que tiene otros planes de pagos con funcionalidades muy completas.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Registrate en la plataforma [sheets.bets](https://sheet.best/admin/) Y mira la documentacion de como vicular tu archivo de Excel en Google Sheets a tu servicio de sheets bets: [Documentacion sheets best](https://sheetbestdocs.netlify.app/#how-to-prepare-your-sheet)
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+### 5. Remplaza la url FORM
+El servicio te dara una url en donde podras enviar los datos por medio de una promesa. debes remplzar esa url en la siguiente ruta:
+```
+└── 📁form-google-sheets
+    └── 📁src
+        └── 📁functions
+            └── saveData.js
+```
 
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+### Con esto listo, ya podras corresr tu proyecto de manera local y 100% funcional.
